@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+}
+.container {
+    display: flex;                /* Enable flexbox */
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+    height: 100%;                 /* Full height of the viewport */
+    padding-top: 60px;
+}
+
+.main {
+    text-align: center;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    padding: 40px;
+    padding-bottom: 25px;
+    border-radius: 8px;
+    height: 613px;
+    width: 381px;
+    align-content: center;
+}
+
+.location {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.socials {
+    border: 2px solid #000;
+    border-color: rgb(54, 53, 52);
+    background-color: rgb(54, 53, 52);
+    padding: 10px;
+    border-radius: 8px;
+
+
+}
+.socials:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+}
+
+/* Mobile styles */
+@media (max-width: 375px) {
+    .main {
+        width: 100%;            /* Full width on mobile */
+        height: auto;          /* Auto height for flexibility */
+        max-width: 350px;      /* Optional max width for mobile */
+        padding: 20px;         /* Adjust padding for smaller screens */
+    }
+
+    .container {
+        padding-top: 30px;     /* Adjust top padding for mobile */
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 376px) and (max-width: 1440px) {
+    .main {
+        width: 381px;          /* Fixed width for tablets and small desktops */
+        height: 613px;         /* Fixed height */
+    }
+}
